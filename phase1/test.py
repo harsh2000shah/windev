@@ -1,16 +1,17 @@
 # importing shits....
 from tkinter import *
-# from tkinter.ttk import *
+import os as os
+from elevate import elevate
+
+# used to get admin permission...
+elevate()
 
 # create a root object... like body in html
 root = Tk()
 
-# style = Style()
-# style.configure('TButton', font=('calibri', 20, 'bold'), borderwidth = '4')
-
 # title just like the html thingie... and icon... near the title...
 root.title("AaplaHR | Register")
-icon_photo = PhotoImage(file = r"C:\Users\harshShah\Desktop\partA\test\logistics64.png")
+icon_photo = PhotoImage(file ="logistics64.png")
 root.iconphoto(False, icon_photo)
 
 #****************************   VARIABLES ********************************
@@ -24,14 +25,15 @@ def submit():
     id = id_var.get()
     password = pass_var.get()
     print("entered id is: " + id)
-    print("endtered password is: " + password)
+    # print("endtered password is: " + password)
     id_var.set("")
     pass_var.set("")
+    os.system('python successTest.py')
     #here i need to put the thing to call the next script to upload shits...
 
 # the company logo...
-photo = PhotoImage(file = r"C:\Users\harshShah\Desktop\partA\test\image.png")
-label = Label(root, image=photo, height=100, bg="#00BFFF").pack(fill="both", expand=True)
+photo = PhotoImage(file ="image.png")
+label = Label(root, image=photo, height=100, bg="#00BFFF").pack(fill="both", expand=True, ipady=(20), ipadx=(50))
 
 canvas = Canvas(root, height=300, width=500, highlightthickness=0, bg="#00BFFF")
 #******************************************************************************************************
@@ -44,7 +46,7 @@ pass_label = Label(canvas, text="Password                             ", font=('
 pass_entry = Entry(canvas, textvariable = pass_var,font=('calibre', 12, 'normal'), bg="white", width=25, bd=5, show="*").pack(ipady=(2))
 
 #creating the sub button...
-sub_btn = Button(canvas, text='Submit',font=('normal', 12, 'bold'), fg="white", bg="forest green", command=submit).pack(pady=(30,20))
+sub_btn = Button(canvas, text='Submit',font=('normal', 12, 'bold'), fg="white", bg="forest green", command=submit).pack(pady=(30,30))
 
 
 #******************************************************************************************************
