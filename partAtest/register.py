@@ -51,7 +51,7 @@ def submit():
         if password_got == password:
             id_var.set("")
             pass_var.set("")
-            os.system('python ../phase2/successTest.py')
+            os.system('python phasetwo.py')
             sys.exit()
         else:
             ctypes.windll.user32.MessageBoxW(0, "Entered Password is incorrect", "Invalid Response", 1)
