@@ -1,0 +1,7 @@
+"C:\Users\harshShah\Desktop\compile\logistics64.ico"
+
+
+
+
+
+pyinstaller -w -i "C:\Users\harshShah\Desktop\compileBackup\logistics64.ico" register.py

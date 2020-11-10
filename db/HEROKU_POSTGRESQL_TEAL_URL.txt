@@ -1,0 +1,18 @@
+postgres://lvoyfxcjoqmbxa:d971190b2bd5645d023f5c93a1b78a5c701576f0009fa3d6903a12ce3770ce72@ec2-18-210-90-1.compute-1.amazonaws.com:5432/d5vsj8ca6ts06
+
+
+Connection information for default credential.
+Connection info string:
+   "    dbname= d5vsj8ca6ts06
+	host= ec2-18-210-90-1.compute-1.amazonaws.com
+	port= 5432
+	user= lvoyfxcjoqmbxa
+	password= d971190b2bd5645d023f5c93a1b78a5c701576f0009fa3d6903a12ce3770ce72
+	sslmode= require    "
+Connection URL:
+        postgres://lvoyfxcjoqmbxa:d971190b2bd5645d023f5c93a1b78a5c701576f0009fa3d6903a12ce3770ce72@ec2-18-210-90-1.compute-1.amazonaws.com:5432/d5vsj8ca6ts06
+
+
+
+command:-
+	psql -h ec2-18-210-90-1.compute-1.amazonaws.com -U lvoyfxcjoqmbxa d5vsj8ca6ts06

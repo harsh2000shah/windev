@@ -1,0 +1,40 @@
+CREATE TABLE CLIENTS(
+  id SERIAL PRIMARY KEY,
+  firstName Char(255) DEFAULT '#N/A',
+  lastName Char(255) DEFAULT '#N/A',
+  phoneNumber Char(255) DEFAULT '#N/A',
+  emailAddress  Char(255) DEFAULT '#N/A',
+  residentialAddress  Char(255) DEFAULT '#N/A',
+  presentCity  Char(255) DEFAULT '#N/A',
+  presentDistrict  Char(255) DEFAULT '#N/A',
+  aadharNumber  Char(255) DEFAULT '#N/A',
+  tenth  Char(255) DEFAULT '#N/A',
+  tenthPass  Char(255) DEFAULT '#N/A',
+  twelth  Char(255) DEFAULT '#N/A',
+  twelthPass  Char(255) DEFAULT '#N/A',
+  grad  Char(255) DEFAULT '#N/A',
+  gradPass  Char(255) DEFAULT '#N/A',
+  diploma  Char(255) DEFAULT '#N/A',
+  diplomaPass  Char(255) DEFAULT '#N/A',
+  postgrad  Char(255) DEFAULT '#N/A',
+  postgradPass  Char(255) DEFAULT '#N/A',
+  logistics  Char(255) DEFAULT '#N/A',
+  picking  Char(255) DEFAULT '#N/A',
+  packing  Char(255) DEFAULT '#N/A',
+  scanning  Char(255) DEFAULT '#N/A',
+  otherExp  Char(255) DEFAULT '#N/A',
+  otherPost  Char(255) DEFAULT '#N/A'
+);
+
+
+CREATE TABLE EMPLOYEES(
+  firstName Varchar DEFAULT '#N/A',
+  lastName Varchar DEFAULT '#N/A',
+  empcode Varchar PRIMARY KEY DEFAULT '#N/A',
+  bioCode Varchar DEFAULT '#N/A'
+);
+
+CREATE TABLE CLIENTS_LOGIN(
+  id_ Varchar PRIMARY KEY DEFAULT '#N/A',
+  password Varchar DEFAULT '#N/A'
+);

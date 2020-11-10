@@ -1,0 +1,16 @@
+postgres://xhmwyzyzdjapsv:0b0d9e0c6cb8e80f6d895b870a8ad709e81e478ef271c67869ac643cf4fe17ae@ec2-52-71-153-228.compute-1.amazonaws.com:5432/d3bqo8sugrakjr
+
+
+Connection information for default credential.
+Connection info string:
+   "    dbname= d3bqo8sugrakjr
+	host= ec2-52-71-153-228.compute-1.amazonaws.com
+	port= 5432
+	user= xhmwyzyzdjapsv
+	password= 0b0d9e0c6cb8e80f6d895b870a8ad709e81e478ef271c67869ac643cf4fe17ae
+	sslmode= require    "
+Connection URL:
+   postgres://xhmwyzyzdjapsv:0b0d9e0c6cb8e80f6d895b870a8ad709e81e478ef271c67869ac643cf4fe17ae@ec2-52-71-153-228.compute-1.amazonaws.com:5432/d3bqo8sugrakjr
+
+command:-
+	psql -h ec2-52-71-153-228.compute-1.amazonaws.com -U xhmwyzyzdjapsv d3bqo8sugrakjr
